@@ -81,7 +81,6 @@ const students = [
   console.log("Challenge 7");
   // Challenge 7
   // Make a NEW array with 5 values of your choice, using the same syntax as the array creation from the previous 6 challenges; that is, every value should be placed within the square brackets.  Now console.log out each value individually.
-  const newArray = [1, 2, 3, 4, 5];
   // Challenge 7 Code
 
 

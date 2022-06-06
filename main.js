@@ -43,7 +43,7 @@ const students = [
   // Challenge 3
   // Console.log out only the even numbers in the following array.
   const positiveNumbers = [5, 2, 13, 17, 4, 102, 3000];
-  // Challenge 2 Code
+  // Challenge 3 Code
 
 
 

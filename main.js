@@ -155,7 +155,8 @@ const students = [
   console.log("\n");
   console.log("Challenge 15");
   // Challenge 15
-  // Use .concat to combine the following two arrays into a NEW array you make (.concat RETURNS an array). Then console.log out each value of that new array individually. Now console.log both the primaries and secondaries arrays, noting that .concat does NOT mutate the original arrays.
+  // Create two new arrays.
+  // Use .concat to combine those two arrays into a NEW array you make (.concat RETURNS an array). Then console.log out each value of that new array individually. Now console.log both the primaries and secondaries arrays, noting that .concat does NOT mutate the original arrays.
   // Challenge 15 Code
 
 

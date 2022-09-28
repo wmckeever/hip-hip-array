@@ -28,7 +28,7 @@ const students = [
   
 let id1 = 0; // keeps track of where we are in the loop. 
 
-while(id1< students.length){
+while(id1 < students.length){
 console.log(students[id1]);
   id1++ 
 }
@@ -58,11 +58,15 @@ console.log(students[id1]);
   const positiveNumbers = [5, 2, 13, 17, 4, 102, 3000];
   // Challenge 3 Code
 
-  let evenNumbers = positiveNumbers.filter(number => {
-    return number % 2 === 0;
-  });
-  
-  console.log(evenNumbers); 
+
+  let int = 0;
+  while(int < positiveNumbers.length){
+ if (positiveNumbers[int] % 2 == 0){
+  console.log(positiveNumbers[int])
+ }
+ 
+ int++ 
+}
 
   console.log("\n");
   console.log("Challenge 4");
@@ -73,14 +77,14 @@ console.log(students[id1]);
   // Challenge 4 Code
 
   
-
-  let oddNumbers = positiveNumbers.filter(number => {
-    return number % 2 === 1;
-    
-  });
-  console.log(oddNumbers); 
-  
-  
+  let int = 0;
+  while(int < mixedSignNumbers.length){
+ if (mixedSignNumbers[int] % 2 == 0){
+  console.log(mixedSignNumbers[int])
+ }
+ 
+ int++ 
+}
 
   
   console.log("\n");
@@ -122,6 +126,13 @@ console.log(fibonacciNumbers);
 console.log("After adding two values (21 & 34) to the end of the array:")
 fibonacciNumbers.push(21,34);
 console.log(fibonacciNumbers);
+
+let id1 = 0; // keeps track of where we are in the loop. 
+
+while(id1 < fibonacciNumbers.length){
+console.log(fibonacciNumbers[id1]);
+  id1++ 
+}
   
 
 
@@ -241,6 +252,14 @@ while(id < newStudentList.length){
 console.log(students2[i]);
 i++
 
+// let copiedStudents = [];
+// let index = 3;
+
+// while(index < 11){
+//   copiedStudents.push(students[index])
+//   index++
+// }
+// console.log(copiedStudents);
 
 
 
@@ -284,16 +303,18 @@ console.log(students)
   const dinosaurs = ['Velociraptor', 'T-Rex', 'Stegosaurus', 'Triceratops', 'Dimetrodon', 'Allosaur', 'Spinosaurus', 'Gigantosaur']
   // Challenge 12 Code
 
-  
-console.log("This is the original array: ");
+  console.log("This is the original array: ");
 console.log(dinosaurs);
 
+let i = 0;
+let dinos2 = dinosaurs.splice(4,3);
 
-console.log("This is the altered array: ");
-dinosaurs.splice(0,4);
-dinosaurs.splice(3);
-console.log(dinosaurs);
-  
+while(i < dinosaurs.length){
+console.log(dinosaurs[i]);
+i++;
+
+}
+
   
   console.log("\n");
   console.log("Challenge 13");
@@ -331,22 +352,24 @@ console.log(dinosaurs);
   // Use .concat to combine those two arrays into a NEW array you make (.concat RETURNS an array). Then console.log out each value of that new array individually. Now console.log both the primaries and secondaries arrays, noting that .concat does NOT mutate the original arrays.
   // Challenge 15 Code
 
-
   const computers = ['dell', 'hp', 'starlabs', 'lenovo', 'alienware', 'apple' ]
 
-const linuxDistros = ['ubuntu', 'debian', 'linux-mint', 'arch', 'manjaro', 'popOS', 'fedora', 'elementaryOS']
+  const linuxDistros = ['ubuntu', 'debian', 'linux-mint', 'arch', 'manjaro', 'popOS', 'fedora', 'elementaryOS']
+  
+  
+  let allBrands = computers.concat(linuxDistros);
+  console.log(allBrands);
+  
+  let i = 0;
+  
 
 
-let allBrands = computers.concat(linuxDistros);
-console.log(allBrands);
-
-let i = 0;
-
-while(i < allBrands){
-console.log(allBrands[i])
-i++
-
-}
-
-console.log(`Here is the primary array called computer brands: ${computers}` )
-console.log(`Here is the secondary array called linux distros: ${linuxDistros}` )
+  console.log(`Here is the primary array called computer brands: ${computers}` )
+  console.log(`Here is the secondary array called linux distros: ${linuxDistros}` )
+  
+  while(i < allBrands.length){
+  console.log(allBrands[i])
+  i++
+  
+  }
+  
